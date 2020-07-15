@@ -1,4 +1,4 @@
-![](imgs/dino.gif)
+![](https://raw.githubusercontent.com/j178/j178/master/imgs/dino.gif)
 <!--
 **j178/j178** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
