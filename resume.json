@@ -18,6 +18,7 @@
         "mobile": "17600693283",
         "github": "https://github.com/j178",
         "zhihu": "",
+        "wechat": "Josted",
         "workExpYear": "",
         "workPlace": "北京",
         "positionTitle": "后端研发"
@@ -41,18 +42,18 @@
             "dataIndex": 0
         },
         {
-            "award_info": "国家励志奖",
+            "award_info": "国家励志奖学金",
             "award_time": "2015.09",
             "dataIndex": 1
         },
         {
-            "award_info": "卓越新人奖",
+            "award_info": "深信服 - 卓越新人奖",
             "award_time": "2018.10",
             "dataIndex": 2
         },
         {
             "award_time": "2022.04",
-            "award_info": "突出贡献奖"
+            "award_info": "Robotaxi团队 - 突出贡献奖"
         }
     ],
     "workExpList": [
@@ -60,13 +61,13 @@
             "company_name": "滴滴出行",
             "department_name": "自动驾驶",
             "work_time": ["2020.09", null],
-            "work_desc": "将自动驾驶部门的无人车，作为运力补充到滴滴的网约车服务体系中。支撑快速的无人化运营的商业尝试。",
+            "work_desc": "Robotaxi 订单服务核心研发，主攻派单引擎和车辆调度能力。\n实现将自动驾驶部门的无人车，作为运力补充到滴滴的网约车服务体系中。支撑快速的无人化运营的商业尝试。",
             "dataIndex": 0
         },
         {
             "company_name": "深信服科技",
             "department_name": "千里目安全实验室",
-            "work_time": ["2018.03", "2020.08"],
+            "work_time": ["2018.03", "2020.09"],
             "work_desc": "主导 漏洞主动扫描平台 的开发和迭代",
             "dataIndex": 1
         },
@@ -74,32 +75,42 @@
             "company_name": "深信服科技",
             "department_name": "千里目安全实验室",
             "work_time": ["2017.06", "2018.03"],
-            "work_desc": "编写漏洞扫描插件，Python 后端开发",
+            "work_desc": "安全实习生。负责编写漏洞扫描插件、Python 后端开发",
             "dataIndex": 2
         }
     ],
     "skillList": [
         {
             "skill_name": "Python",
-            "skill_desc": "精通 Python，熟悉 CPython 源码实现，阅读过标准库源码和常用第三方库源码",
+            "skill_desc": "精通 Python，熟悉 CPython 源码实现，熟悉标准库实现和常用第三方库源码",
             "skill_level": 98,
             "dataIndex": 0
         },
         {
             "skill_name": "基础",
-            "skill_desc": "熟悉计算机网络，深入理解网络编程，熟悉常用的数据结构与算法",
-            "skill_level": 80,
+            "skill_desc": "有扎实的计算机理论基础，良好的算法与数据结构基础，了解操作系统基本原理与常见机制",
+            "skill_level": 85,
             "dataIndex": 1
         },
         {
-            "skill_name": "语言",
+            "skill_name": "Backend",
+            "skill_desc": "掌握 Django，Flask 等开源框架设计原理及运行机制，有高并发 WEB 应用架构经验。",
+            "skill_level": 85
+        },
+        {
+            "skill_name": "Network",
+            "skill_desc": "熟悉 TCP/IP、DNS 等底层协议，精通 HTTP 协议，熟练掌握各种工具进行网络问题诊断",
+            "skill_level": 80
+        },
+        {
+            "skill_name": "Language",
             "skill_level": 80,
-            "skill_desc": "熟悉 Go 语言，了解  Rust、C/C++、Java 语言"
+            "skill_desc": "熟悉 Go 语言，能够阅读 Rust、C/C++、Java 等常见语言代码"
         },
         {
             "skill_name": "DB",
-            "skill_level": 70,
-            "skill_desc": "熟悉 MySQL，了解其内部原理，有线上数据库死锁排查经验；了解 SQLite、PostgreSQL 和 MongoDB"
+            "skill_level": 80,
+            "skill_desc": "熟悉 MySQL，了解其内部原理，有数据库死锁和索引优化经验；了解 PostgreSQL 和 MongoDB"
         },
         {
             "skill_name": "Redis",
@@ -127,27 +138,27 @@
             "project_name": "Robotaxi 订单服务",
             "project_role": "后端负责人",
             "project_time": "2020.10 - 至今",
-            "project_desc": "将自动驾驶部门的无人车，作为运力补充到滴滴的网约车服务体系中。支撑快速的无人化运营的商业尝试。",
-            "project_content": "1. 独立的无人车订单体系和派单撮合引擎 2. 对车辆的智能调度，实现比网约车更高的派单效率 3. 支撑全流程自动化的尝试"
+            "project_desc": "Robotaxi 是滴滴的无人化打车服务，目标是将自动驾驶部门的无人车，作为运力补充到滴滴的网约车服务体系中，实现全流程无人化的运营。",
+            "project_content": "\n订单服务的核心部分是车辆与乘客的互通，包括对车辆的控制、乘客端接口、派单引擎以及运营平台。\n1. 实现了独立的无人车订单体系和派单撮合引擎，并以混合派单的形式接入滴滴的网约车。 \n2. 实现对车辆的智能调度系统，在车辆空闲时自动调往热点区域，完成比网约车更高的派单效率 \n3. 运营监控平台，可实现对车辆状态、轨迹、车内视频流的实时监控和车辆调度"
         },
         {
             "project_name": "云镜漏洞主动扫描器",
             "project_role": "核心开发",
             "project_time": "2018.03 - 2020.08",
-            "project_desc": "基于端口扫描技术，探测目标主机的开放端口和服务信息，调度漏扫平台，识别主机上可能存在的漏洞情况。",
+            "project_desc": "云镜是一款高效的主动扫描工具，基于端口扫描技术，探测目标主机的开放端口和服务信息，调度漏扫平台，识别主机上可能存在的漏洞情况。",
             "project_content": "\n1. 利用 SYN 半连接特性，实现快速的端口开放探测，可在 1分30秒内扫完单 IP的全量端口 \n2. 实现基于 Python 脚本的插件系统，内置常用探测函数，减少 30% 插件代码量 \n3. 实现基于贪心算法的插件调度器，减少了60% 的插件执行次数，将插件执行时间从 5 分钟优化到 2 分钟内"
         },
         {
             "project_name": "扫描平台后端接口",
             "project_role": "核心开发",
             "project_time": "2018.03 - 2019.10",
-            "project_desc": "基于 Flask 实现的后端接口，数据库使用 MySQL + SQLAlchemy + Redis ，使用 Docker + Nginx + Gunicorn 部署",
+            "project_desc": "基于 Flask 实现的后端接口，数据库使用 MySQL + SQLAlchemy + Redis，使用 Docker + Nginx + Gunicorn 部署。",
             "project_content": "\n1. 实现了支持前后端分离和客户端扫描器的 API 接口 \n2. 实现基于 Redis 的消息队列，将耗时任务异步化处理 \n3. 支持每分钟 1000 台扫描器的心跳轮询和任务分发，每秒 5000 条结果数据写入"
         }
     ],
     "workList": [
         {
-            "work_name": "与他人合作拥有 CVE 漏洞编号（CVE-2019-9741）",
+            "work_name": "与他人合作发现 HTTP Header 注入攻击漏洞（CVE-2019-9741）",
             "work_desc": "",
             "visit_link": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9741"
         }
