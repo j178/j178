@@ -57,7 +57,7 @@
     ],
     "workExpList": [
         {
-            "company_name": "滴滴",
+            "company_name": "滴滴出行",
             "department_name": "自动驾驶",
             "work_time": ["2020.09", null],
             "work_desc": "将自动驾驶部门的无人车，作为运力补充到滴滴的网约车服务体系中。支撑快速的无人化运营的商业尝试。",
@@ -147,8 +147,8 @@
     ],
     "workList": [
         {
-            "work_name": "与他人合作拥有 CVE 漏洞编号",
-            "work_desc": "CVE-2019-9741",
+            "work_name": "与他人合作拥有 CVE 漏洞编号（CVE-2019-9741）",
+            "work_desc": "",
             "visit_link": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9741"
         }
     ],
