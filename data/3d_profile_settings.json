@@ -1,5 +1,6 @@
 {
     "type": "normal",
+    "filename": "./data/profile-customize.svg",
     "backgroundColor": "#ffffff",
     "foregroundColor": "#00000f",
     "strongColor": "#111133",
@@ -14,4 +15,3 @@
       "#1d6a23"
     ]
   }
-  
