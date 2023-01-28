@@ -16,7 +16,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: ./data/3d_profile_settings.json
+          SETTING_JSON: ./3d-profile-settings.json
+      - run: mv ./profile-3d-contrib/* ./ && rmdir profile-3d-contrib
       - name: Add & Commit
         run: |
           git config user.name github-actions
