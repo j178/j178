@@ -20,8 +20,8 @@ jobs:
       - run: mv ./profile-3d-contrib/* ./ && rmdir profile-3d-contrib
       - name: Add & Commit
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add -A .
           git commit -m "Update readme daily"
           git push
