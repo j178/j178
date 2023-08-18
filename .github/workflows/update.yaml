@@ -35,7 +35,7 @@ jobs:
       - name: Update readme
         run: |
           link=$(echo ${{ steps.upload.outputs.links }} | tr -d '\n')
-          sed -i "2 s|src=\"[^\"]*\"|src=\"$link\"|g" README.md
+          sed -i "2 s|src=\"[^\"]*\"|src=\"$link\"|" README.md
       - run: rm -rf ./profile-3d-contrib
       - name: Add & Commit
         run: |
