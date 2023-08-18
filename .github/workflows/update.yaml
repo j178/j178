@@ -34,8 +34,8 @@ jobs:
             ./profile-3d-contrib/profile-3d.svg
       - name: Update readme
         run: |
-          link=$(${{ steps.upload.outputs.links }} | tr -d '\n')
-          sed -i "s/src=\"[^\"]*\"/src=\"$link\"/g" README.md
+          link=$(echo ${{ steps.upload.outputs.links }} | tr -d '\n')
+          sed -i "0,s/src=\"[^\"]*\"/src=\"$link\"/" README.md
       - run: rm -rf ./profile-3d-contrib
       - name: Add & Commit
         run: |
