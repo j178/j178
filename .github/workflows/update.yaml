@@ -17,7 +17,26 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: ./3d-profile-settings.json
-      - run: mv ./profile-3d-contrib/* ./ && rmdir profile-3d-contrib
+      - name: Read GitHub cookies from 1Password
+        id: op-load-secret
+        uses: 1password/load-secrets-action@v1
+        with:
+          export-env: false
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          GH_SESSION: "op://Development/GitHub Session cookie/credential"
+      - name: Upload to GitHub
+        uses: j178/github-s3@master
+        id: upload
+        with:
+          github-session: ${{ steps.op-load-secret.outputs.GH_SESSION }}
+          files: >-
+            ./profile-3d-contrib/profile-3d.svg
+      - name: Update readme
+        run: |
+          link=$(${{ steps.upload.outputs.links }} | tr -d '\n')
+          sed -i "s/src=\"[^\"]*\"/src=\"$link\"/g" README.md
+      - run: rm -rf ./profile-3d-contrib
       - name: Add & Commit
         run: |
           git config user.name 'github-actions[bot]'
