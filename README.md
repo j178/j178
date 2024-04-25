@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="500" src="https://github.com/j178/j178/assets/10510431/ae712225-1ebe-4e3e-9bb3-69519b7c8ddd" />
+  <img height="500" src="https://github.com/j178/j178/assets/10510431/62799b79-02c7-475f-89ff-4032be567027" />
 </p>
 
 <p align="center">
