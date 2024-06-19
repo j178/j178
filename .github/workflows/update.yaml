@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Generate 3D contribution profile
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
@@ -19,7 +19,7 @@ jobs:
           SETTING_JSON: ./3d-profile-settings.json
       - name: Read GitHub cookies from 1Password
         id: op-load-secret
-        uses: 1password/load-secrets-action@v1
+        uses: 1password/load-secrets-action@v2
         with:
           export-env: false
         env:
