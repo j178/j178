@@ -25,11 +25,13 @@ jobs:
         env:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
           GH_SESSION: "op://Development/GitHub Session cookie/credential"
+          GH_DEVICE_ID: "op://Development/GitHub Session cookie/device_id"
       - name: Upload to GitHub
         uses: j178/github-s3@master
         id: upload
         with:
           github-session: ${{ steps.op-load-secret.outputs.GH_SESSION }}
+          github-device-id: ${{ steps.op-load-secret.outputs.GH_DEVICE_ID }}
           files: >-
             ./profile-3d-contrib/profile-3d.svg
       - name: Update readme
