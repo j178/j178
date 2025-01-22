@@ -24,8 +24,8 @@ jobs:
           export-env: false
         env:
           OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
-          GH_SESSION: "op://Development/GitHub Session cookie/credential"
-          GH_DEVICE_ID: "op://Development/GitHub Session cookie/device_id"
+          GH_SESSION: "op://Development/GitHub Alt Cookie/credential"
+          GH_DEVICE_ID: "op://Development/GitHub Alt Cookie/device_id"
       - name: Upload to GitHub
         uses: j178/github-s3@master
         id: upload
