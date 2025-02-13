@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -38,6 +38,17 @@ jobs:
         run: |
           link=$(echo ${{ steps.upload.outputs.links }} | tr -d '\n')
           sed -i "2 s|src=\"[^\"]*\"|src=\"$link\"|" README.md
+
+      - name: Download github-contrib-stats
+        run: |
+          curl -sSL --output /tmp/github-contrib-stats.tar.gz https://github.com/j178/github-contrib-stats/releases/latest/download/github-contrib-stats-x86_64-unknown-linux-gnu.tar.gz && \
+          tar -xvf /tmp/github-contrib-stats.tar.gz -C /tmp && \
+          chmod +x /tmp/github-contrib-stats
+      - name: Update contribute stats
+        run: /tmp/github-contrib-stats -u ${{ github.repository_owner }} --update contribution.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - run: rm -rf ./profile-3d-contrib
       - name: Add & Commit
         run: |
