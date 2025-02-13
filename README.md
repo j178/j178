@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="500" src="https://github.com/user-attachments/assets/4a4ece56-969f-4e96-b38b-83e48c912b60" />
+  <img height="500" src="./profile-3d.svg" />
 </p>
 
 <p align="center">
