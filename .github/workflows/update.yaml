@@ -16,6 +16,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          YEAR: 2026 # Workaround for https://github.com/yoshi389111/github-profile-3d-contrib/issues/163
           SETTING_JSON: ./3d-profile-settings.json
 
       - name: Move files
